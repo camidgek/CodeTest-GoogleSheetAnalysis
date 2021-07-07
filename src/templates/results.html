@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Results of Google Sheet</title>
+{% if data %}
+  <p>Your sheet URL: {{ data.gsheet_url }}</p>
+  <p>Your sheet ID: {{ data.gsheet_id }}</p>
+  <p>Number of sheets: {{ data.num_sheets }}</p>
+{% else %}
+  <h1>Invalid ID, dataset empty!</h1>
+{% endif %}
